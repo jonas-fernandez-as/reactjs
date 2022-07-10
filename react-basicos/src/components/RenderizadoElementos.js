@@ -1,10 +1,11 @@
 import React,{Component} from "react";
 import data from "../helpers/data.json"
 
+
 function ElementoLista(props){
  return(
   <li>
-   <a href={props.el.web} target="_blank">
+   <a href={props.el.web} target="_blank" rel="noreferrer">
     {props.el.name}
     </a>
   </li>
@@ -20,7 +21,7 @@ export default class RenderizadoElementos extends Component {
  }
  
  render(){
-  console.log(data)
+  //console.log(data)
   return(
    <div>
     <h2>Renderizado de Elementos</h2>
